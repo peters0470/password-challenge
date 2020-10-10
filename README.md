@@ -2,6 +2,7 @@
 
 ## Purpose
 A website to randomly generate a password of varying lenghts and characters.
+Code was added to Javascript to meet criteria of the client.
 
 ## Built with 
 * HTML
