@@ -39,10 +39,10 @@ var result = [];
    selection = window.alert("You must choose at least one option!");
    return generatePassword();
  }
- if (chooseCapital) {
+if (chooseCapital) {
    selection = selection.concat(capAlphabet);
  }
- if (chooseLower) {
+if (chooseLower) {
   selection = selection.concat(regAlphabet);
 }
 if (chooseNumber) {
@@ -55,7 +55,7 @@ if (chooseSymbol) {
    var randomChar = getRandomChar(selection);
    result.push(randomChar); 
  }
- console.log(selection);
+ 
  selection = [];
  return result.join("");
 };
