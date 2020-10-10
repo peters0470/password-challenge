@@ -67,6 +67,18 @@ function generatePassword() {
  else if (chooseNumber && chooseSymbol) {
    selection = numbers.concat(symbols);
  }
+ else if (chooseCapital && chooseLower && chooseNumber) {
+   selection = capAlphabet.concat(regAlphabet, numbers);
+ }
+ else if (choooseCapital && chooseLower && chooseSymbol) {
+   selection = capAlphabet.concat(regAlphabet, symbols);
+ }
+ else if (chooseCapital && chooseNumber && chooseSymbol) {
+   selection = capAlphabet.concat(numbers, symbols);
+ }
+ else if (chooseLower && chooseNumber && chooseSymbol) {
+   selection = regAlphabet.concat(numbers, symbols);
+ }
 };
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
